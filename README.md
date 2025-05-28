@@ -30,9 +30,6 @@ This is a secure and user-friendly **Online Voting System** built with React.js.
     
   - `dotenv` for managing sensitive config
 
-## 📷 Screenshots
-
-_(Add screenshots here if available, e.g. Home page, OTP verification, Ballot page, etc.)_
 
 ## 🔧 Installation
 
