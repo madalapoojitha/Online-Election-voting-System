@@ -1,0 +1,130 @@
+/* Ballot.css */
+.ballot-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  color: #1a237e;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.candidate-list {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.candidate-item {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.candidate-item:hover {
+  border-color: #3f51b5;
+  transform: translateY(-2px);
+}
+
+.candidate-item input[type="radio"] {
+  display: none;
+}
+
+.candidate-item input[type="radio"]:checked + label {
+  color: #3f51b5;
+  font-weight: bold;
+}
+
+.candidate-item input[type="radio"]:checked + label::before {
+  content: "✓";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+  background-color: #3f51b5;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+}
+
+.candidate-item label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.candidate-item label::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.candidate-item span {
+  color: #666;
+  font-size: 0.9rem;
+  margin-left: auto;
+}
+
+.submit-vote-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-vote-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.submit-vote-btn:active {
+  transform: translateY(0);
+}
+
+/* Add media query for mobile responsiveness */
+@media (max-width: 480px) {
+  .ballot-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  .candidate-item label {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,37 @@
+.container {
+    text-align: center;
+    margin: 20px;
+}
+
+.video-feed {
+    width: 320px;
+    height: 240px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.captured-image {
+    width: 320px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+}

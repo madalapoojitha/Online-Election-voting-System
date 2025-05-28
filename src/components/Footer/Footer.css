@@ -1,0 +1,52 @@
+/* Footer.css */
+.footer {
+    background-color: #1c1f26; /* Dark background */
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 50px; /* Small height */
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: center;
+    font-size: 12px; /* Smaller text size */
+    line-height: 16px; /* Moves text slightly up */
+    overflow: hidden;
+    white-space: nowrap; /* Ensures text stays in one line */
+    padding: 0;
+}
+
+/* Wrapper for text and links */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+}
+
+/* Styling for footer links */
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #f39c12;
+}
+.footer-content span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}

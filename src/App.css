@@ -1,0 +1,16 @@
+body {
+  padding-top: 56px; /* For fixed navbar */
+}
+
+main {
+  padding: 20px 0;
+}body {
+  padding-top: 60px; /* Navbar height */
+  padding-bottom: 60px; /* Footer height */
+  min-height: 100vh;
+}
+
+main {
+  padding: 20px;
+  min-height: calc(100vh - 120px); /* Adjust for header/footer */
+}

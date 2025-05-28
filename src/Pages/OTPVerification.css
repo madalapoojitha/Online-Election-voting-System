@@ -1,0 +1,159 @@
+/* OTPVerification.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.otp-page-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start; /* Changed from center */
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 60px 20px 20px; /* Increased top padding */
+}
+
+.otp-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  margin: 100px auto 0; /* Added top margin */
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  color: #2d3748;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.country-select {
+  padding: 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  font-size: 1rem;
+  width: 35%;
+  transition: border-color 0.3s ease;
+}
+
+.country-select:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+.phone-input,
+.otp-input {
+  padding: 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 65%;
+  transition: border-color 0.3s ease;
+}
+
+.phone-input:focus,
+.otp-input:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+}
+
+.send-otp-btn {
+  background: #4a5568;
+  color: white;
+  width: 100%;
+}
+
+.send-otp-btn:hover {
+  background: #2d3748;
+}
+
+.verify-btn {
+  background: #48bb78;
+  color: white;
+  width: 60%;
+}
+
+.verify-btn:hover {
+  background: #38a169;
+}
+
+.resend-btn {
+  background: none;
+  color: #4a5568;
+  text-decoration: underline;
+}
+
+.resend-btn:hover {
+  color: #2d3748;
+}
+
+.message {
+  padding: 15px;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  font-weight: 500;
+}
+
+.message.success {
+  background: #f0fff4;
+  color: #2f855a;
+  border: 2px solid #c6f6d5;
+}
+
+.message.error {
+  background: #fff5f5;
+  color: #c53030;
+  border: 2px solid #fed7d7;
+}
+
+@media (max-width: 480px) {
+  .otp-page-container {
+    padding: 80px 15px 15px; /* Increased top padding for mobile */
+  }
+  
+  .otp-container {
+    padding: 1.5rem;
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .country-select,
+  .phone-input {
+    width: 100%;
+  }
+
+  .verify-btn {
+    width: 100%;
+  }
+}
